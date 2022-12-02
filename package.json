@@ -1,0 +1,23 @@
+{
+  "name": "ts_repos",
+  "version": "1.0.0",
+  "description": "token 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",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mudassarhanif2/node_calc.git"
+  },
+  "keywords": [],
+  "author": "Mudassar Hanif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mudassarhanif2/node_calc/issues"
+  },
+  "homepage": "https://github.com/mudassarhanif2/node_calc#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.10"
+  }
+}
