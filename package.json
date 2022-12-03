@@ -21,7 +21,8 @@
   "devDependencies": {
     "@types/chalk-animation": "^1.6.1",
     "@types/inquirer": "^9.0.3",
-    "@types/node": "^18.11.10"
+    "@types/node": "^18.11.10",
+    "typescript": "^5.0.0-dev.20221203"
   },
   "dependencies": {
     "chalk": "^5.1.2",
