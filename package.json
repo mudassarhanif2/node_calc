@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "token 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",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +19,13 @@
   },
   "homepage": "https://github.com/mudassarhanif2/node_calc#readme",
   "devDependencies": {
+    "@types/chalk-animation": "^1.6.1",
+    "@types/inquirer": "^9.0.3",
     "@types/node": "^18.11.10"
+  },
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "chalk-animation": "^2.0.3",
+    "inquirer": "^9.1.4"
   }
 }
