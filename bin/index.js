@@ -1,4 +1,4 @@
-// console.log("hello world")
+#! /usr/bin/env node
 import inquirer from 'inquirer';
 import chalkAnaimation from 'chalk-animation';
 function sleep() {
@@ -9,9 +9,10 @@ function sleep() {
 async function welcome() {
     chalkAnaimation.karaoke('Lets start calculation');
     await sleep();
-    console.log(`     _____________________
+    console.log(`     
+     _____________________
     |  _________________  |
-    | |              0. | |
+    | |   Developed by  | |
     |    Mudassar Hanif   |
     | |_________________| |
     |  ___ ___ ___   ___  |
@@ -61,7 +62,7 @@ async function askQuestion() {
             answer = answer.no1 * answer.no2;
             break;
         case "Division":
-            answer = answer.no1 + answer.no2;
+            answer = answer.no1 / answer.no2;
             break;
     }
     console.log(`The answer is:  ${answer}`);
