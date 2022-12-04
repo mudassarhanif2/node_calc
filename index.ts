@@ -2,11 +2,11 @@
 
 import inquirer from 'inquirer';
 import chalkAnaimation from 'chalk-animation';
-import { type } from 'os';
+import chalk from 'chalk';
 
 function sleep () {
     return new Promise(res=>{
-        setTimeout(res, 2000)
+        setTimeout(res, 0)
     })
 }
 
@@ -16,8 +16,8 @@ async function welcome () {
     console.log(`     
      _____________________
     |  _________________  |
-    | |   Developed by  | |
-    |    Mudassar Hanif   |
+    | |   ${chalk.blue('Developed by')}  | |
+    |    ${chalk.bgCyan('Mudassar Hanif')}   |
     | |_________________| |
     |  ___ ___ ___   ___  |
     | | 7 | 8 | 9 | | + | |
@@ -30,8 +30,7 @@ async function welcome () {
     | |___|___|___| |___| |
     |_____________________|
     `);
-    // chalkAnaimation.neon('              Developed By Mudassar Hanif')
-    // await sleep();
+
 };
 
 
@@ -46,7 +45,6 @@ async function askQuestion(){
             message: "Which operation you want to perform?\n",
             name: 'operator',
             choices:['Addition', 'Subtraction','Multiplication','Division'],
-            // validate: (ans)=> typeof ans == 'number'? null:'enter a number'
         },
         {
             type : 'number',
@@ -86,10 +84,12 @@ async function repeatAgain(){
             {
                 type : "input",
                 name: 'again',
-                message: 'would you like to calculate again? y or n \n'
+                message: chalk.red('would you like to calculate again?\nPress y for "yes" otherwise press any key')
             }
         ])
         
-    } while (yesNo.again == 'y' || yesNo.again == 'Y' );
+    } while ((yesNo.again.toLowerCase() == 'y' || yesNo.again.toLowerCase() == 'yes' ))
 }
 repeatAgain();
+// let a = 'df';
+// a.toLowerCase
