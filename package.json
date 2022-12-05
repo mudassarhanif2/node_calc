@@ -1,6 +1,6 @@
 {
   "name": "mudassarcalc",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "this cli based calculator",
   "main": "index.js",
   "type": "module",
