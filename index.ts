@@ -6,17 +6,18 @@ import chalk from 'chalk';
 
 function sleep () {
     return new Promise(res=>{
-        setTimeout(res, 0)
+        setTimeout(res, 2000)
     })
 }
 
 async function welcome () {
-    chalkAnaimation.karaoke('Lets start calculation');
+    let start  = chalkAnaimation.karaoke('....Lets start calculation....');
     await sleep()
+    start.stop()
     console.log(`     
      _____________________
     |  _________________  |
-    | |   ${chalk.blue('Developed by')}  | |
+    | |   ${chalk.red('Developed by')}  | |
     |    ${chalk.bgCyan('Mudassar Hanif')}   |
     | |_________________| |
     |  ___ ___ ___   ___  |
